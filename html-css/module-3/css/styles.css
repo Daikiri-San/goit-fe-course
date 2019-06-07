@@ -1,18 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box; 
 }
 
-body{
-    margin:72px 151px 72px 150px;
+.wrapper{
+    margin-right: auto;
+    margin-left:  auto;
+    margin-bottom: 73px;
+    margin-top: 77px;
+    max-width: 960px;
+  
+    padding-right: 10px;
+    padding-left:  10px;
 }
 
 article{
 display: inline-block;
 margin-bottom: 130px;
 width: calc(50% - 4px);
-height: 480px;
 }
 
 img {
@@ -21,10 +25,14 @@ img {
 }
 
 nav {
-    height: 92px;
+    height: 88px;
     vertical-align: bottom;
     margin-bottom: 100px;
     text-align: center;
+}
+
+li{
+    display: inline-block;
 }
 
 a {
@@ -32,7 +40,8 @@ a {
     font-family: Playfair Display, sans-serif;
     text-decoration: none;
     font-size: 14px;
-    margin-right: 250px;
+    margin-right: 120px;
+    text-transform: uppercase;
 }
 
 a:nth-child(4) {
@@ -43,8 +52,16 @@ a:hover {
     color: #03a9f4;
 }
 
-.text, h2{
+h2{
     display: inline-block;
+    width: 421px;
+    font-family: Playfair Display, sans-serif;
+    color: #626262;
+}
+
+p {
+    display: inline-block;
+    line-height: 24px;
     width: 421px;
     font-family: Playfair Display, sans-serif;
     color: #626262;
@@ -57,6 +74,7 @@ a:hover {
     font-size: 14px;
     margin-top: 30px;
     margin-bottom: 28px;
+    text-transform: uppercase;
 }
 
 h2{
@@ -68,7 +86,7 @@ h2{
     margin-right: 0;
 }
 
-input{
+button{
     display: block;
     font-family: Playfair Display, sans-serif;
     color: #626262;
@@ -76,6 +94,6 @@ input{
     border-block-color: #626262;
     font-size: 20px;
     text-align: center;
-    padding: 10px 33px;
+    padding: 15px 30px;
     margin: auto;
 }
