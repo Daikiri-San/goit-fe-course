@@ -1,99 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap");
+
 * {
-    box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.wrapper{
-    margin-right: auto;
-    margin-left:  auto;
-    margin-bottom: 73px;
-    margin-top: 77px;
-    max-width: 960px;
-  
-    padding-right: 10px;
-    padding-left:  10px;
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 73px;
+  margin-top: 77px;
+  max-width: 960px;
+
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-article{
-display: inline-block;
-margin-bottom: 130px;
-width: calc(50% - 4px);
-}
-
-img {
-    width: 421px;
-    height: 281px;
+article {
+  display: inline-block;
+  margin-bottom: 130px;
+  width: 421px;
 }
 
 nav {
-    height: 88px;
-    vertical-align: bottom;
-    margin-bottom: 100px;
-    text-align: center;
+  margin-bottom: 104px;
+  margin-left: 30px;
+  text-align: center;
 }
 
-li{
-    display: inline-block;
+li {
+  display: inline-block;
 }
 
 a {
-    color: #626262;
-    font-family: Playfair Display, sans-serif;
-    text-decoration: none;
-    font-size: 14px;
-    margin-right: 120px;
-    text-transform: uppercase;
+  color: #626262;
+  font-family: Playfair Display, serif;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 95px;
+  text-transform: uppercase;
 }
 
 a:nth-child(4) {
-margin-right: 0px;
+  margin-right: 0px;
 }
 
 a:hover {
-    color: #03a9f4;
+  color: #03a9f4;
 }
 
-h2{
-    display: inline-block;
-    width: 421px;
-    font-family: Playfair Display, sans-serif;
-    color: #626262;
+h2 {
+  display: inline-block;
+  width: 421px;
+  font-family: Playfair Display, serif;
+  color: #626262;
 }
 
 p {
-    display: inline-block;
-    line-height: 24px;
-    width: 421px;
-    font-family: Playfair Display, sans-serif;
-    color: #626262;
+  display: inline-block;
+  line-height: 24px;
+  width: 421px;
+  font-family: Playfair Display, serif;
+  color: #626262;
 }
 
-.imgtitle{
-    color: #b4ad9e;
-    font-family: Ubuntu, serif;
-    font-weight: 200;
-    font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 28px;
-    text-transform: uppercase;
+.imgtitle {
+  color: #b4ad9e;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
 }
 
-h2{
-    font-size: 30px;
-    margin-bottom: 40px;
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .box2 {
-    margin-right: 0;
+  margin-right: 0;
+  margin-left: 61px;
 }
 
-button{
-    display: block;
-    font-family: Playfair Display, sans-serif;
-    color: #626262;
-    background-color: white;
-    border-block-color: #626262;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 30px;
-    margin: auto;
+input {
+  display: block;
+  font-family: Playfair Display, serif;
+  color: #626262;
+  background-color: white;
+  border-block-color: #626262;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 30px;
+  margin: auto;
 }
