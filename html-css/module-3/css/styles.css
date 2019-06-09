@@ -59,6 +59,7 @@ h2 {
 p {
   display: inline-block;
   line-height: 24px;
+  font-size: 14px;
   width: 421px;
   font-family: Playfair Display, serif;
   color: #626262;
