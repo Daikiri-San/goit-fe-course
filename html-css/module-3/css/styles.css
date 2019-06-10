@@ -69,6 +69,11 @@ p {
   color: #626262;
 }
 
+.content_text {
+  height: 70px;
+  overflow: hidden;
+}
+
 .imgtitle {
   color: #b4ad9e;
   font-family: Ubuntu, sans-serif;
