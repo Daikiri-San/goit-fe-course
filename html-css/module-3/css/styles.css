@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300,400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -94,7 +93,7 @@ h2 {
   margin-left: 61px;
 }
 
-input {
+button {
   display: block;
   font-family: Playfair Display, serif;
   color: #626262;
@@ -104,4 +103,8 @@ input {
   text-align: center;
   padding: 15px 30px;
   margin: auto;
+}
+
+button::first-letter {
+  text-transform: uppercase;
 }
