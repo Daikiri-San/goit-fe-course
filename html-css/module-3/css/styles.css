@@ -11,11 +11,8 @@ html {
 }
 
 .wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 74px;
-  margin-top: 78px;
-  max-width: 900px;
+  margin: 0 auto;
+  width: 900px;
 }
 
 article {
@@ -39,8 +36,8 @@ article:nth-last-of-type(-n + 2) {
 }
 
 .page-header {
+  margin-top: 78px;
   margin-bottom: 104px;
-  margin-left: 30px;
   text-align: center;
 }
 
@@ -49,16 +46,19 @@ li {
 }
 
 a {
+  text-decoration: none;
   color: #626262;
   font-family: Playfair Display, serif;
-  text-decoration: none;
   font-size: 14px;
-  margin-right: 95px;
   text-transform: uppercase;
 }
 
-a:last-child(1) {
-  margin-right: 0px;
+.navigation li {
+  margin-right: 95px;
+}
+
+.navigation li:last-child {
+  margin-right: 0;
 }
 
 a:hover,
@@ -84,11 +84,6 @@ p {
   color: #626262;
 }
 
-.content_text {
-  height: 70px;
-  overflow: hidden;
-}
-
 .imgtitle {
   color: #b4ad9e;
   font-family: Ubuntu, sans-serif;
@@ -104,19 +99,19 @@ p {
   margin-left: 60px;
 }
 
-button {
+.btn-more {
   display: block;
   font-family: Playfair Display, serif;
   color: #626262;
   background-color: white;
-  border-block-color: #626262;
   font-size: 20px;
   text-align: center;
   padding: 15px 30px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 74px;
   cursor: pointer;
 }
 
-button::first-letter {
+.btn-more::first-letter {
   text-transform: uppercase;
 }
