@@ -13,8 +13,8 @@ html {
 .wrapper {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 73px;
-  margin-top: 77px;
+  margin-bottom: 74px;
+  margin-top: 78px;
   max-width: 900px;
 }
 
@@ -35,10 +35,10 @@ img {
 }
 
 article:nth-last-of-type(-n + 2) {
-  margin-bottom: 57px;
+  margin-bottom: 56px;
 }
 
-nav {
+.page-header {
   margin-bottom: 104px;
   margin-left: 30px;
   text-align: center;
@@ -72,7 +72,7 @@ h2 {
   font-family: Playfair Display, serif;
   color: #626262;
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 p {
@@ -95,7 +95,7 @@ p {
   font-weight: 300;
   font-size: 14px;
   margin-top: 30px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
@@ -114,6 +114,7 @@ button {
   text-align: center;
   padding: 15px 30px;
   margin: auto;
+  cursor: pointer;
 }
 
 button::first-letter {
