@@ -15,16 +15,23 @@ html {
   margin-left: auto;
   margin-bottom: 73px;
   margin-top: 77px;
-  max-width: 960px;
-
-  padding-right: 10px;
-  padding-left: 10px;
+  max-width: 900px;
 }
 
 article {
   display: inline-block;
   margin-bottom: 130px;
-  width: 421px;
+  width: 420px;
+}
+
+.post-wrap {
+  font-size: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 article:nth-last-of-type(-n + 2) {
@@ -50,17 +57,18 @@ a {
   text-transform: uppercase;
 }
 
-a:nth-child(4) {
+a:last-child(1) {
   margin-right: 0px;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #03a9f4;
 }
 
 h2 {
   display: inline-block;
-  width: 421px;
+  width: 420px;
   font-family: Playfair Display, serif;
   color: #626262;
   font-size: 30px;
@@ -71,7 +79,7 @@ p {
   display: inline-block;
   line-height: 24px;
   font-size: 14px;
-  width: 421px;
+  width: 420px;
   font-family: Playfair Display, serif;
   color: #626262;
 }
@@ -93,7 +101,7 @@ p {
 
 .box2 {
   margin-right: 0;
-  margin-left: 61px;
+  margin-left: 60px;
 }
 
 button {
