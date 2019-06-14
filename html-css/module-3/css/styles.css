@@ -47,7 +47,7 @@ li {
 a {
   text-decoration: none;
   color: #626262;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -69,7 +69,7 @@ a:focus {
 h2 {
   display: inline-block;
   width: 420px;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   color: #626262;
   font-size: 30px;
   margin-bottom: 35px;
@@ -80,13 +80,13 @@ p {
   line-height: 24px;
   font-size: 14px;
   width: 420px;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   color: #626262;
 }
 
 .imgtitle {
   color: #b4ad9e;
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 14px;
   margin-top: 30px;
@@ -101,7 +101,7 @@ p {
 
 .btn-more {
   display: block;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   color: #626262;
   background-color: white;
   font-size: 20px;
