@@ -160,7 +160,7 @@ color: #555252;
 .news-articles {
   float: left;
   width: 350px;
-  height: 495px;
+  height: 492px;
   margin-top: 82px;
 }
 
@@ -169,6 +169,7 @@ color: #555252;
 }
 
 .article-title, .article-content {
+  line-height: 26px;
   color: #555252;
 }
 
