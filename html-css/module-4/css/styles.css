@@ -142,8 +142,8 @@ color:#1abc9c;
   background-color: rgba(255, 255, 255, 0.44);
 }
 
-.name-price:hover,
-.name-price:focus {
+.shop-item:hover .name-price,
+.shop-item:focus .name-price {
   background-color: #1abc9c;
 }
 
