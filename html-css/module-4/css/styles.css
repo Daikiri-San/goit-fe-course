@@ -105,14 +105,14 @@ color:#1abc9c;
   background-color: #e8effc;
 }
 
-.shop-item:not(:nth-child(4n+5)){
+.shop-item:not(:nth-child(4n+4)){
   margin-right: 30px;
 }
 .shop-item:nth-last-child(1n+5){
   margin-bottom: 30px;
 }
 
-.shop-item:nth-child(1n+6){
+.shop-item:nth-child(1n+5){
   margin-bottom: 98px;
 }
 
