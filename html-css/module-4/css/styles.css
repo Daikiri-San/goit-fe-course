@@ -209,10 +209,10 @@ color: #555252;
   margin-bottom: 82px;
   cursor: pointer;
   text-transform:capitalize;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .link-on-article:hover,
 .link-on-article:focus {
-  box-shadow: 6px 6px 8px -4px rgba(0,0,0,0.39);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }
