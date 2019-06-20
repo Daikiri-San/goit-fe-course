@@ -239,7 +239,7 @@ color:#1abc9c;
 
 .inner__box {
   position: absolute;
-  display: block;
+  display: none;
   width: 235px;
   height: 260px;
   background-color: #000;
@@ -256,6 +256,8 @@ color:#1abc9c;
   border-style: solid;
   border-color: #fff;
   z-index: 5;
+  background-color: #000;
+  opacity: 1;
   background-repeat: no-repeat; 
 }
 
@@ -266,7 +268,6 @@ color:#1abc9c;
 }
 
 .special {
-  position: absolute;
   width: 165px;
   font-family: "Open sans", sans-serif;
   color: #fff;
@@ -282,13 +283,12 @@ color:#1abc9c;
   background-position: 10px, 0px, 10px, 10px;
   padding-top: 10px;
   padding-left: 40px;
-  background-color: #000;
+  background-color: #323232;
   opacity: 1;
 }
 
 .like {
   background-image: url(../img/icons/like.png);
-  top: 80px;
   left: 35px;
 }
 
@@ -302,11 +302,14 @@ background-image: url(../img/icons/time.png);
   right: 35px;
 }
 
-.icon__btn {
-  border: none;
+.shop-item:hover .name-price,
+.shop-item:focus .name-price,
+.inner__box__item:hover,
+.inner__box__item:focus {
+  background-color: #1abc9c;
 }
 
-.shop-item:hover .name-price,
-.shop-item:focus .name-price {
-  background-color: #1abc9c;
+.shop-item:hover .inner__box,
+.shop-item:focus .inner__box {
+  display: block;
 }
