@@ -109,6 +109,7 @@ color:#1abc9c;
 .shop-item:not(:nth-child(4n+4)){
   margin-right: 30px;
 }
+
 .shop-item:nth-last-child(1n+5){
   margin-bottom: 30px;
 }
