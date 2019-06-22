@@ -90,15 +90,13 @@ color:#1abc9c;
 }
 
 .slider {
-  width: 1600px;
-  margin: 0 auto;
+  width: 100%;
   position: relative;
   margin-bottom: 94px;
 }
 
 .slider-ctrl {
   position: absolute;
-  top: 225px;
   border: none;
   font-size: 100px;
   color: #ffffff;
@@ -110,15 +108,17 @@ color:#1abc9c;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
+  top: 46.2%;
+  transform: translate( -50%, -50%);
   }
 
   .button-prev {
-    left: 244px;
+    left: 23.6%;
     background-image: url("../img/icons/left.png");
   }
 
   .button-next {
-    right: 244px;
+    right: 18%;
     background-image: url("../img/icons/right.png");
   }
 
@@ -138,18 +138,21 @@ color:#1abc9c;
 
 .slide__image {
   position: absolute;
-  width: 100%;
-  filter: brightness(52%)
+  filter: brightness(52%);
+  left: 50%;
+  top: 50%;
+  transform: translate( -50%, -50%);
 }
 
 .link__from__slide {
   position: absolute;
-  left: 428px;
-  top: 200px;
   width: 740px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  color: #fff
+  color: #fff;
+  left: 50%;
+  top: 44.5%;
+  transform: translate( -50%, -50%);
 }
 
 .main__link {
@@ -211,7 +214,6 @@ color:#1abc9c;
 }
 
 .name-price {
-  float: left;
   background-color: #323232;
 }
 
@@ -239,11 +241,9 @@ color:#1abc9c;
 .inner__box {
   position: absolute;
   display: none;
-  width: 235px;
-  height: 260px;
   background-color: rgba(0, 0, 0, 0.5);
-  top: 10px;
-  left: 10px;
+  margin: auto;
+  top: 10px; left: 10px; bottom: 50px; right: 10px;
 }
 
 .inner__box__item {
@@ -256,11 +256,12 @@ color:#1abc9c;
   z-index: 5;
   background-repeat: no-repeat; 
   cursor: pointer;
+  transform: translate(-50%,-50%);
 }
 
 .simple {
   width: 50px;
-  top: 80px;
+  top: 40%;
   background-color: rgba(0, 0, 0, 0);
   background-position: center;
 }
@@ -273,8 +274,8 @@ color:#1abc9c;
   font-size: 14px;
   line-height: 32px;
   letter-spacing: -0.3px;
-  bottom: 75px;
-  left: 35px;
+  top: 62%;
+  left: 50%;
   background-image: url(../img/icons/cart.png);
   background-position: 10px, 0px, 10px, 10px;
   padding-left: 40px;
@@ -283,17 +284,17 @@ color:#1abc9c;
 
 .like {
   background-image: url(../img/icons/like.png);
-  left: 35px;
+  left: 25.6%;
 }
 
 .share {
-background-image: url(../img/icons/share.png);
-left: 93px;
+  background-image: url(../img/icons/share.png);
+  left: 50%;
 }
 
 .wait {
-background-image: url(../img/icons/time.png);
-  right: 35px;
+  background-image: url(../img/icons/time.png);
+  left: 74.4%;
 }
 
 .shop-item:hover .name-price,
