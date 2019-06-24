@@ -238,12 +238,16 @@ color:#1abc9c;
   background-color: rgba(255, 255, 255, 0.44);
 }
 
+.separate__img {
+  position: relative;
+}
+
 .inner__box {
   position: absolute;
   display: none;
   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
-  top: 10px; left: 10px; bottom: 50px; right: 10px;
+  top: 10px; left: 10px; bottom: 10px; right: 10px;
 }
 
 .inner__box__item {
