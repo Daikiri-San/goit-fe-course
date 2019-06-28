@@ -10,6 +10,7 @@
   --ff-ks: "Kaushan Script", cursive;
   --ff-mont: "Montserrat", sans-serif;
   --ff-rob: "Roboto", sans-serif;
+  --simple-animation: background-color 0.2s linear;
 }
 
 html {
@@ -94,7 +95,7 @@ justify-content: space-between;
   height: 3px;
   width: 0;
   background-color: var(--secondary-color);
-  transition: width .2s ease-in-out, left .2s ease-in-out;
+  transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
   left: 50%;
   bottom: 0;
   }
@@ -107,7 +108,7 @@ justify-content: space-between;
   height: 3px;
   width: 0;
   background-color: var(--secondary-color);
-  transition: width .2s ease-in-out;
+  transition: width 0.2s ease-in-out;
   left: 50%;
   bottom: 0;
   }
@@ -257,9 +258,9 @@ justify-content: space-between;
 .inner__box {
   position: absolute;
   display: flex;
-  justify-content: center;
-  width: 224px;
-  height: 56px;
+  transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }
 
 .inner__box a {
@@ -274,7 +275,17 @@ justify-content: space-between;
 .inner__box__item {
   width: 56px;
   height: 56px;
+  margin-right: 1px;
   background-color: var(--additional-color);
+  transition: var(--simple-animation);
+}
+
+.inner__box__item:hover {
+  background-color: var(--main-color);
+}
+
+.inner__box__item:last-child {
+  margin-right: 0px;
 }
 
 .visually-hidden {
@@ -295,6 +306,14 @@ justify-content: space-between;
 
 .instagram {
   background-image: url(../img/icons/social/instagram.png);
+}
+
+.exact__member {
+  transition: transform 1s ease-in-out;
+}
+
+.exact__member:hover {
+  transform: translate(-20px, -20px)
 }
 
 .members__name, .members__activities {

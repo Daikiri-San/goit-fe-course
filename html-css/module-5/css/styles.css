@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-.wrapper {
-  background-color: #e9f0fd;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -92,11 +88,15 @@ color:#1abc9c;
 .slider {
   width: 100%;
   position: relative;
-  margin-bottom: 94px;
+}
+
+.buttons__position {
+  position: relative;
+  top: 38%;
 }
 
 .slider-ctrl {
-  position: absolute;
+  position: absolute;  
   border: none;
   font-size: 100px;
   color: #ffffff;
@@ -104,21 +104,19 @@ color:#1abc9c;
   opacity: 0.65;
   width: 104px;
   height: 104px;
-  z-index: 1;
+  z-index: 10;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-  top: 46.2%;
-  transform: translate( -50%, -50%);
   }
 
   .button-prev {
-    left: 23.6%;
+    left: 0;
     background-image: url("../img/icons/left.png");
   }
 
   .button-next {
-    right: 18%;
+    right: 0;
     background-image: url("../img/icons/right.png");
   }
 
@@ -127,21 +125,27 @@ color:#1abc9c;
   opacity: 1;
 }
 
-.slides {
-  margin-top: 86px;
-}
-
-.separate__slide {
+.slides__position {
   position: relative;
+  margin: 0 auto;
+  margin-top: 86px;
+  width: 1600px;
   height: 602px;
 }
 
 .slide__image {
+  object-fit: cover;
+}
+
+.separate__slide::before {
+  content: '';
   position: absolute;
-  filter: brightness(52%);
-  left: 50%;
-  top: 50%;
-  transform: translate( -50%, -50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);  
+  z-index: 5;
 }
 
 .link__from__slide {
@@ -152,6 +156,7 @@ color:#1abc9c;
   color: #fff;
   left: 50%;
   top: 44.5%;
+  z-index: 10;
   transform: translate( -50%, -50%);
 }
 
@@ -177,11 +182,16 @@ color:#1abc9c;
   color: #ff7200;
 }
 
+.background-color {
+  background-color: #e9f0fd;
+}
+
 .section-name {  
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 48px;
   letter-spacing: -1px;
+  padding-top: 94px;
   color: #515151;
   text-transform: uppercase;
   text-align: center;
@@ -219,13 +229,17 @@ color:#1abc9c;
 
 .product-name, .price {
   float: left;
-  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 18px;
   letter-spacing: -0.4px;
   text-transform: uppercase;
   padding: 12px 12px 10px;
+  color: #ffffff;
+}
+
+.whole-name__link {
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -250,6 +264,15 @@ color:#1abc9c;
   top: 10px; left: 10px; bottom: 10px; right: 10px;
 }
 
+.inner__box__container {
+  position: absolute;
+  width: 166px;
+  height: 108px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .inner__box__item {
   position: absolute;
   display: block;
@@ -260,45 +283,45 @@ color:#1abc9c;
   z-index: 5;
   background-repeat: no-repeat; 
   cursor: pointer;
-  transform: translate(-50%,-50%);
 }
 
 .simple {
   width: 50px;
-  top: 40%;
+  top: 0;
   background-color: rgba(0, 0, 0, 0);
   background-position: center;
 }
 
 .special {
-  width: 165px;
+  width: 166px;
   font-family: "Open sans", sans-serif;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 30px;
   letter-spacing: -0.3px;
-  top: 62%;
-  left: 50%;
   background-image: url(../img/icons/cart.png);
   background-position: 10px, 0px, 10px, 10px;
   padding-left: 40px;
   background-color: #323232;
+  left: 0;
+  bottom: 0;
 }
 
 .like {
+  left: 0;
   background-image: url(../img/icons/like.png);
-  left: 25.6%;
 }
 
 .share {
-  background-image: url(../img/icons/share.png);
   left: 50%;
+  transform: translate(-50%);
+  background-image: url(../img/icons/share.png);
 }
 
 .wait {
+  right: 0;
   background-image: url(../img/icons/time.png);
-  left: 74.4%;
 }
 
 .shop-item:hover .name-price,
@@ -314,31 +337,26 @@ color:#1abc9c;
 }
 
 .page-footer {
-  position: relative;
-  height: 88px;
+  width: 100%;
   background-color: #323232;
 }
 
 .footer__info {
-position:absolute;
 text-transform: capitalize;
 font-family: "Open Sans", sans-serif;
 font-size: 16px;
 line-height: 28px;
 letter-spacing: -0.3px;
-left: 50%;
-top: 50%;
-transform: translate( -50%, -50%);
+padding: 30px 0;
+text-align: center;
 }
 
 .law__info {
-  float: left;
+  display: inline;
   color: #fefefe;
-  margin-right: 4px;
 }
 
 .link__on__designer {
-  float: left;
   text-decoration: none;
   color: #46bfa9;
 }
