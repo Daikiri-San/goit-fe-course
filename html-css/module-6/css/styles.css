@@ -350,10 +350,13 @@ justify-content: space-between;
   border-top: 1px solid var(--third-font-color);
 }
 
-.created {
+.created,
+.link__on__designer {
   font-family: var(--ff-mont), var(--ff-myr);
-  font-weight: 400;
-  color: var(--first-font-color)
+  font-weight: 500;
+}
+.created {
+color: var(--first-font-color);
 }
 
 .link__on__designer {
