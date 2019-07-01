@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,700|Roboto:300i,400&display=swap');
 
-@font-face {
-  font-family: "Myriad Pro";
-  src: url(./fonts/MyriadPro-Regular.ttf) format('truetype');
-}
-
 :root {
   --main-color:#95e1d3;
   --secondary-color:#f38181;
@@ -15,7 +10,6 @@
   --ff-ks: "Kaushan Script", cursive;
   --ff-mont: "Montserrat", sans-serif;
   --ff-rob: "Roboto", sans-serif;
-  --ff-myr: "Myriad Pro", sans-serif;
   --simple-animation: background-color 0.2s linear;
 }
 
@@ -50,7 +44,7 @@ img {
 
 .site-logo a{
     text-decoration: none;
-    font-family: var(--ff-mont), var(--ff-myr);
+    font-family: var(--ff-mont);
     font-weight: 700;
     font-size: 30px;
     letter-spacing: -0.6px;
@@ -80,7 +74,7 @@ justify-content: space-between;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: var(--ff-mont), var(--ff-myr);
+    font-family: var(--ff-mont);
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -133,7 +127,7 @@ justify-content: space-between;
   color: var(--first-font-color);
   text-align: center;
   margin-bottom: 64px;
-  font-family: var(--ff-mont), var(--ff-myr);
+  font-family: var(--ff-mont);
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -154,7 +148,7 @@ justify-content: space-between;
   display: block;
   color: var(--first-font-color);
   text-align: center;
-  font-family: var(--ff-ks), var(--ff-myr);
+  font-family: var(--ff-ks);
   font-size: 24px;
   text-transform: capitalize;
   line-height: 29px;
@@ -175,7 +169,7 @@ justify-content: space-between;
 }
 
 .service__title, .members__name {
-  font-family: var(--ff-mont), var(--ff-myr);
+  font-family: var(--ff-mont);
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -225,7 +219,7 @@ justify-content: space-between;
 .service__text, 
 .section__text,
 .input-text {
-  font-family: var(--ff-rob), var(--ff-myr);
+  font-family: var(--ff-rob);
   font-size: 15px;
   line-height: 24px;
   color: var(--second-font-color);
@@ -337,7 +331,7 @@ justify-content: space-between;
   color: var(--second-font-color);
   margin-bottom: 82px;
   text-transform: capitalize;
-  font-family: var(--ff-rob), var(--ff-myr);
+  font-family: var(--ff-rob);
   font-weight: 300;
   font-style: italic;
 }
@@ -352,7 +346,7 @@ justify-content: space-between;
 
 .created,
 .link__on__designer {
-  font-family: var(--ff-mont), var(--ff-myr);
+  font-family: var(--ff-mont);
   font-weight: 500;
 }
 .created {
@@ -384,7 +378,7 @@ color: var(--first-font-color);
 }
 
 .input-text::placeholder {
-  font-family: var(--ff-rob), var(--ff-myr);
+  font-family: var(--ff-rob);
   font-weight: 300;
   font-style: italic;
   color: var(--third-font-color);
@@ -395,7 +389,7 @@ border: none;
 width: 150px;
 color: #fff;
 background-color: var(--main-color);
-font-family: var(--ff-mont), var(--ff-myr);
+font-family: var(--ff-mont);
 font-weight: 700;
 text-transform: uppercase;
 cursor: pointer;
