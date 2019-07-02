@@ -34,11 +34,14 @@ img {
   height: auto;
 }
 
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 .page-nav {
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
-  align-items: flex-end;
+  float: right;
   margin-bottom: 130px;
 }
 
@@ -51,7 +54,13 @@ img {
     color: var(--main-color);
 }
 
+.site-navigation>.navigation:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-logo {
+  margin-top: 24px;
+  float: left;
   animation: logo 10s linear 0s infinite;
 }
 
@@ -65,9 +74,12 @@ img {
 }
 
 .site-navigation {
-display: flex;
-width: 490px;
-justify-content: space-between;
+float: right;
+}
+
+.navigation {
+  float: left;
+  margin-top: 36px;
 }
 
 .navigation a{
@@ -226,6 +238,7 @@ justify-content: space-between;
 }
 
 .section__text {
+  padding: 0 10%;
   text-align: center;
   margin-bottom: 90px;
 }
