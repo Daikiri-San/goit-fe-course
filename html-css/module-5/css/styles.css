@@ -130,6 +130,7 @@ color:#1abc9c;
 
 .slide__image {
   width: 100%;
+  object-fit: cover; 
 }
 
 .separate__slide::before {
