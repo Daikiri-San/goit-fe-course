@@ -34,14 +34,11 @@ img {
   height: auto;
 }
 
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.page-nav {
-  float: right;
+.page-header{
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 130px;
 }
 
@@ -54,13 +51,17 @@ img {
     color: var(--main-color);
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation>.navigation:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-logo {
   margin-top: 24px;
-  float: left;
   animation: logo 10s linear 0s infinite;
 }
 
@@ -73,12 +74,7 @@ img {
   }
 }
 
-.site-navigation {
-float: right;
-}
-
 .navigation {
-  float: left;
   margin-top: 36px;
 }
 
@@ -251,7 +247,6 @@ float: right;
 .member {
   position: relative;
   width: 380px;
-  height: 471px;
   margin-bottom: 28px;
   background-color: var(--main-color);
 }
@@ -352,7 +347,7 @@ float: right;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 1px solid var(--third-font-color);
 }
 
@@ -400,6 +395,7 @@ color: var(--first-font-color);
 .input-submit {
 border: none;
 width: 150px;
+font-size: 14px;
 color: #fff;
 background-color: var(--main-color);
 font-family: var(--ff-mont);
