@@ -254,7 +254,6 @@ float: right;
   height: 471px;
   margin-bottom: 28px;
   background-color: var(--main-color);
-  transition: transform 0.2s linear;
 }
 
 .exact__member {
