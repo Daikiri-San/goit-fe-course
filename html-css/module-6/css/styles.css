@@ -386,6 +386,7 @@ color: var(--first-font-color);
 .input-text {
   width: 230px;
   border: 1px solid var(--third-font-color);
+  border-right: none;
   padding: 10px;
 }
 
