@@ -1,12 +1,15 @@
+@import url(../css/fonts.css);
+
 :root {
   --main-color:#222222;
   --secondary-color:#fed136;
   --first-font-color:#777777;
   --second-font-color:#bbbbbb;
   --third-font-color: #ffffff;
-  --ff-ks: "Kaushan Script", cursive;
-  --ff-mont: "Montserrat", sans-serif;
-  --ff-rob: "Roboto", sans-serif;
+  --ff-mont-semib: "Montserrat Semibold", sans-serif;
+  --ff-mont-bold: "Montserrat Bold", sans-serif;
+  --ff-rob-slab: "RobotoSlab", serif;
+  --ff-bit-it: "Bitter-ital", serif;
 }
 
 html {
@@ -40,8 +43,7 @@ img {
 
 .site-logo a{
     text-decoration: none;
-    font-family: var(--ff-mont);
-    font-weight: 700;
+    font-family: "Great Vibes", "Leckerli One", serif;
     font-size: 26px;
     line-height: 41px;
     letter-spacing: 1.3px;
@@ -57,7 +59,7 @@ justify-content: space-between;
 .navigation a{
     text-decoration: none;
     text-transform: uppercase;
-    font-family: var(--ff-mont);
+    font-family: var(--ff-mont-semib);
     font-weight: 500;
     font-size: 14px;
     line-height: 32px;
@@ -74,8 +76,7 @@ justify-content: space-between;
   display: block;
   color: var(--main-color);
   text-align: center;
-  font-family: var(--ff-mont);
-  font-weight: 700;
+  font-family: var(--ff-mont-bold);
   letter-spacing: 1px;
   line-height: 75px;
   font-size: 40px;
@@ -87,6 +88,7 @@ justify-content: space-between;
   text-align: center;
   margin-bottom: 76px;
   line-height: 19px;
+  font-family: var(--ff-bit-it);
   font-size: 16px;
   line-height: 19px;
 }
@@ -100,16 +102,15 @@ justify-content: space-between;
 .exact-service {
   text-align: center;
   width: 290px;
-  padding: 0 0 0 20px;
 }
 
 .service__title{
-  font-family: var(--ff-mont);
+  font-family: var(--ff-mont-bold);
   font-weight: 500;
   font-size: 18px;
   line-height: 45px;
   letter-spacing: -0.5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: var(--main-color);
 }
 
@@ -141,15 +142,16 @@ justify-content: space-between;
 
 .service__text, 
 .section__text{
-  font-family: var(--ff-rob);
   color: var(--first-font-color);
 }
 
 .service__text {
+  font-family: var(--ff-rob-slab);
   text-align: center;
   margin-bottom: 120px;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 1px;
 }
 
 .second-section__backgruond {
@@ -184,16 +186,19 @@ justify-content: space-between;
 border: 1px solid #cccccc;
 border-radius: 2%;
 padding: 0 0 0 20px;
+font-family: var(--ff-mont-semib);
+font-size: 14px;
+color: var(--main-color);
 }
 
 .contact-messege__input:required:valid,
 .exact__message:required:valid {
-  outline: 1px solid green;
+  outline: 4px solid green;
 }
 
 .contact-messege__input:focus:required:invalid,
 .exact__message:focus:required:invalid {
-  outline: 1px solid red;
+  outline: 4px solid red;
 }
 
 .exact__message {
@@ -207,6 +212,7 @@ padding: 0 0 0 20px;
   text-transform: uppercase;
   width: 240px;
   height: 66px;
+  font-family: var(--ff-mont-bold);
   font-size: 18px;
   line-height: 22px;
   color: var(--third-font-color);
@@ -217,6 +223,7 @@ padding: 0 0 0 20px;
 
 .contact-messege__input::placeholder,
 .exact__message::placeholder {
+  font-family: var(--ff-mont-bold);
   text-transform: uppercase;
   color: var(--second-font-color);
   font-size: 14px;
