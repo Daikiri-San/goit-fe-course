@@ -52,8 +52,11 @@ img {
 
 .site-navigation {
 display: flex;
-width: 480px;
 justify-content: space-between;
+}
+
+.site-navigation>.navigation:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation a{
@@ -182,11 +185,16 @@ justify-content: space-between;
 .contact-messege__input,
 .exact__message {
 border: 1px solid #cccccc;
-border-radius: 2%;
 padding: 0 0 0 20px;
 font-family: var(--ff-mont-semib);
 font-size: 14px;
 color: var(--main-color);
+}
+
+.contact-messege__input,
+.exact__message,
+.message__submit {
+  border-radius: 3px;
 }
 
 .contact-messege__input:required:valid,
@@ -216,7 +224,6 @@ color: var(--main-color);
   color: var(--third-font-color);
   background-color: var(--secondary-color);
   border: none;
-  border-radius: 3px;
 }
 
 .contact-messege__input::placeholder,
