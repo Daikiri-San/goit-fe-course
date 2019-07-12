@@ -1,0 +1,65 @@
+@import url(../css/fonts.css);
+
+:root {
+  --main-color:#222222;
+  --secondary-color:#fed136;
+  --first-font-color:#777777;
+  --second-font-color:#bbbbbb;
+  --third-font-color: #ffffff;
+  --ff-rob-light: "Roboto Light", sans-serif;
+  --ff-mont-bold: "Montserrat Bold", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62,5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 32rem;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  position: absolute;
+  top: 2rem;
+}
+
+.banner {
+height: 54rem;
+}
+
+.section__title {  
+  display: block;
+  color: var(--main-color);
+  text-align: center;
+  font-family: var(--ff-mont-bold);
+  letter-spacing: 1px;
+  line-height: 75px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section__text {
+  display: block;
+  text-align: center;
+  margin-bottom: 76px;
+  line-height: 19px;
+  font-family: var(--ff-bit-it);
+  font-size: 16px;
+  line-height: 19px;
+}
