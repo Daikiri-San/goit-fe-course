@@ -1,18 +1,5 @@
-@import url(../css/fonts.css);
-
-:root {
-  --main-color:#ffffff;
-  --secondary-color:#ff4e50;
-  --first-font-color: #333333;
-  --second-font-color: #666666;
-  --ff-rob-light: "Roboto Light", sans-serif;
-  --ff-mont-bold: "Montserrat Bold", sans-serif;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 10px;
-}
+@import url(./fonts.css);
+@import url(./vars.css);
 
 *,
 *::before,
@@ -21,7 +8,7 @@ html {
 }
 
 .container {
-  width: 32rem;
+  max-width: 32rem;
   margin: 0 auto;
 }
 
@@ -45,17 +32,9 @@ img {
 .logo-link {
   text-decoration: none;
   font-size: 2rem;
-  font-family: var(--ff-mont-bold);
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
   color: var(--main-color);
-}
-
-.logo-link,
-.registration-button,
-.section__title,
-.partners__link,
-.main__section,
-.members__name {
-  font-family: var(--ff-mont-bold);
 }
 
 .registration-button::first-letter,
@@ -72,10 +51,17 @@ img {
 
 .registration-button {
   font-size: 1.4rem;
-  background-color: rgba(0,0,0,0);
+  line-height: 1.6;
+  background-color: transparent;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: var(--main-color);
+}
+
+.registration-button,
+.partners__link {
+  cursor: pointer;
+  font-family: var(--main-font);
 }
 
 .signup {
@@ -85,8 +71,6 @@ img {
 
 .banner {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
   margin-bottom: 6.6rem;
 }
 
@@ -97,22 +81,23 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.2);  
-  z-index: 5;
+  background-color: #1a1915;
+  z-index: -1;
 }
 
 .banner__img {
-    margin: 0 auto;
     width: 100%;
     max-height: 52rem;
+    mix-blend-mode: difference;
 }
 
 .inbanner {
   position: absolute;
-  top: 35%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
+  min-width: 32rem;
   text-align: center;
 }
 
@@ -125,10 +110,12 @@ img {
 }
 
 .section__text {
-  font-family: var(--ff-rob-light);
+  font-family: var(--secondary-font);
   font-size: 1.8rem;
   color: var(--main-color);
   line-height: 2.2rem;
+  max-width: 22rem;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
@@ -136,6 +123,7 @@ img {
   display: inline-block;
   text-decoration: none;
   font-size: 1.4rem;
+  line-height: 1.6;
   border: 0.2rem solid var(--secondary-color);
   border-radius: 5rem;
   padding: 0.8rem 3rem;
@@ -153,6 +141,7 @@ img {
 
 .main__section {
   font-size: 2.2rem;
+  line-height: 2.6rem;
   color: var(--first-font-color);
   margin-bottom: 1.4rem;
 }
@@ -164,15 +153,8 @@ img {
 .exact__member {
   position: relative;
   text-align: center;
-  width: 22rem;
+  max-width: 21.6rem;
   margin: 0 auto;
-}
-
-.exact__member:not(:last-of-type) {
-  margin-bottom: 2.6rem;
-}
-
-.exact__member:last-of-type {
   margin-bottom: 2.6rem;
 }
 
@@ -189,7 +171,7 @@ img {
   width: 4rem;
   height: 4rem;
   top: 8.7rem;
-  right: 4.5rem;
+  right: 4.2rem;
   border-radius: 50%;
   border: 0.4rem solid var(--main-color);
   background-repeat: no-repeat;
@@ -219,6 +201,7 @@ img {
 .members__name,
 .members__info {
   font-size: 1.4rem;
+  line-height: 1.6rem;
 }
 
 .members__name {
@@ -227,6 +210,101 @@ img {
 }
 
 .members__info {
-  font-family: var(--ff-rob-light);
+  font-family: var(--secondary-font);
   color: var(--second-font-color);
+}
+
+@media screen and (min-width: 48em) {
+  
+  .container {
+    max-width: 50.4rem;
+  }
+
+  .page-header {
+    top: 3.6rem;
+    min-width: 67.8rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .registration {
+    margin: 0;
+  }
+
+  .banner__img {
+    max-height: 70rem;
+  }
+
+  .inbanner,
+  .section__text {
+    min-width: 50.4rem;
+  }
+
+  .inbanner {
+    top: 50%;
+  }
+
+  .section__title {
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .section__text {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .main__section {
+    margin-bottom: 3rem;
+  }
+
+  .members {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  }
+
+  .exact__member {
+    margin-bottom: 5.6rem;
+  }
+
+  .exact__member:nth-of-type(2n) {
+    margin-bottom: 3.6rem;
+  }
+
+  .fourth__member {
+    order: 4;
+  }
+
+  .second__member {
+    order: 3;
+  }
+
+  .second__link {
+    margin-bottom: 4rem;
+  }
+
+}
+
+@media  screen and (min-width: 90em) {
+
+  .container {
+    max-width: 94rem;
+  }
+  
+  .page-header {
+    min-width: 94rem;
+  }
+
+  .inbanner {
+    max-width: 50.4rem;
+  }
+
+  .second__link {
+    margin-bottom: 7.4rem;
+  }
+
 }

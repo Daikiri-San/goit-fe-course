@@ -1,0 +1,14 @@
+:root {
+    --main-color:#ffffff;
+    --secondary-color:#ff4e50;
+    --first-font-color: #333333;
+    --second-font-color: #666666;
+    --main-font: "Montserrat Bold", sans-serif;
+    --secondary-font: "Roboto Light", sans-serif;
+
+    font-size: 62.5%;
+    font-family: var(--main-font);
+    min-width: 32em;
+    position: relative;
+    box-sizing: border-box;
+  }

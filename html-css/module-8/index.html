@@ -7,7 +7,7 @@
     <meta name="author" content="Nikita Holovnin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework module 8</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/libs/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -24,16 +24,15 @@
       </header>
       <div class="banner">
             <picture>
-                <source media="(min-width: 1440px)"
+                <source media="(min-width: 90em)"
                         srcset="./img/mainview/peopledesktop.jpg">
-                <source media="(min-width: 768px)"
+                <source media="(min-width: 48em)"
                         srcset="./img/mainview/peopletablet.jpg">
                <img class="banner__img"
                     sizes="(max-width: 767px)"
                     src="./img/mainview/holidaymobile.jpg" 
                     alt="happy peaple at holiday">
                </picture>
-        </div>
        <section class="inbanner container">
          <h2 class="section__title">share your holiday dreams</h2>
          <p class="section__text">
@@ -41,37 +40,40 @@
          </p>
          <a href="#" class="partners__link first__link">find your holiday partner</a>
        </section>
+      </div>
     <main class="container">
         <section class="partners">
           <h2 class="main__section">meet a partner for your best holiday</h2>
-          <figure class="exact__member tv-icon">
+          <section class="members">
+          <figure class="exact__member first__member tv-icon">
             <img class="partners__photo" src="img/team/firstpartner.jpg" alt="Bradley Hunter">
               <figcaption>
-                <h2 class="members__name">bradley bunter</h2>
+                <h3 class="members__name">bradley bunter</h3>
                 <p class="members__info">Based in Chicago. I love playing tennis and loud music.</p>
               </figcaption>
           </figure>
-          <figure class="exact__member mixture-icon">
+          <figure class="exact__member second__member mixture-icon">
             <img class="partners__photo" src="img/team/secondpartner.jpg" alt="">
               <figcaption>
-                <h2 class="members__name">lucas marsha</h2>
+                <h3 class="members__name">lucas marsha</h3>
                 <p class="members__info">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
               </figcaption>
           </figure>
-          <figure class="exact__member coffee-icon">
+          <figure class="exact__member third__member coffee-icon">
             <img class="partners__photo" src="img/team/thirdpartner.jpg" alt="">
               <figcaption>
-                <h2 class="members__name">heather walker</h2>
+                <h3 class="members__name">heather walker</h3>
                 <p class="members__info">I'm a happy person that loves cats and climbing on mountains.</p>
               </figcaption>
           </figure>
-          <figure class="exact__member telegram-icon">
+          <figure class="exact__member fourth__member telegram-icon">
             <img class="partners__photo" src="img/team/fourthpartner.jpg" alt="">
               <figcaption>
-                <h2 class="members__name">bradley hunter</h2>
+                <h3 class="members__name">bradley hunter</h3>
                 <p class="members__info">Based in Chicago. I love playing tennis and loud music.</p>
               </figcaption>
           </figure>
+        </section>
           <a href="#" class="partners__link second__link">see other partners</a>
           </section>
     </main>
