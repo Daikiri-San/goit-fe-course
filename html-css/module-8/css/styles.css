@@ -150,12 +150,19 @@ img {
   text-align: center;
 }
 
+.members {
+  margin-bottom: 2.6rem;
+}
+
 .exact__member {
   position: relative;
   text-align: center;
   max-width: 21.6rem;
   margin: 0 auto;
-  margin-bottom: 2.6rem;
+}
+
+.exact__member:not(:last-of-type) {
+margin-bottom: 2.6rem;
 }
 
 .partners__photo {
@@ -265,14 +272,15 @@ img {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  margin-bottom: 3.6rem;
   }
 
-  .exact__member {
+  .exact__member:not(:nth-of-type(2n)) {
     margin-bottom: 5.6rem;
   }
 
   .exact__member:nth-of-type(2n) {
-    margin-bottom: 3.6rem;
+    margin-bottom: 0;
   }
 
   .fourth__member {
@@ -301,6 +309,10 @@ img {
 
   .inbanner {
     max-width: 50.4rem;
+  }
+
+  .exact__member:not(:nth-of-type(2n)) {
+    margin-bottom: 0;
   }
 
   .second__link {
