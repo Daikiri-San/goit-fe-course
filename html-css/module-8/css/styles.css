@@ -20,7 +20,7 @@ img {
 
 .page-header {
   display: flex;
-  flex-flow: column-reverse wrap;
+  flex-flow: column-reverse nowrap;
   position: absolute;
   justify-content: center;
   top: 2rem;
