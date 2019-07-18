@@ -54,8 +54,11 @@ img {
   line-height: 1.6;
   background-color: transparent;
   border: none;
-  padding: 0.5rem 1.5rem;
+  width: 90px;
+  height: 36px;
+  padding: 0;
   color: var(--main-color);
+  transition: border 0.2s linear;
 }
 
 .registration-button,
@@ -64,8 +67,9 @@ img {
   font-family: var(--main-font);
 }
 
-.signup {
-  border: 2px solid #ffffff;
+.registration-button:hover,
+.registration-button:focus {
+  border: 0.2rem solid #ffffff;
   border-radius: 5rem;
 }
 
