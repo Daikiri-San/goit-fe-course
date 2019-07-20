@@ -8,8 +8,15 @@
 }
 
 .container {
-  max-width: 32rem;
+  position: relative;
+  min-width: 32rem;
+  max-width: 76.7rem;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 img {
@@ -29,12 +36,27 @@ img {
   z-index: 10;
 }
 
+ .site-logo {
+   margin: 0 auto;
+ }
+
 .logo-link {
   text-decoration: none;
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 2.4rem;
   color: var(--main-color);
+}
+
+.logo-link:hover,
+.partners__link:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.second__link:hover {
+  text-decoration: none;
+  color:var(--secondary-color);
 }
 
 .registration-button::first-letter,
@@ -102,6 +124,7 @@ img {
   transform: translate(-50%,-50%);
   z-index: 10;
   min-width: 32rem;
+  max-width: 32rem;
   text-align: center;
 }
 
@@ -147,6 +170,8 @@ img {
   font-size: 2.2rem;
   line-height: 2.6rem;
   color: var(--first-font-color);
+  max-width: 30rem;
+  margin: 0 auto;
   margin-bottom: 1.4rem;
 }
 
@@ -228,7 +253,8 @@ margin-bottom: 2.6rem;
 @media screen and (min-width: 48em) {
   
   .container {
-    max-width: 50.4rem;
+    min-width: 76.8rem;
+    max-width: 94.1rem;
   }
 
   .page-header {
@@ -237,6 +263,15 @@ margin-bottom: 2.6rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .site-logo {
+    margin: 0;
+    padding-left: 5rem;
+  }
+
+  .registration {
+    padding-right: 5rem;
   }
 
   .registration {
@@ -269,6 +304,8 @@ margin-bottom: 2.6rem;
   }
 
   .main__section {
+    max-width: none;
+    margin: 0 auto;
     margin-bottom: 3rem;
   }
 
@@ -301,10 +338,10 @@ margin-bottom: 2.6rem;
 
 }
 
-@media  screen and (min-width: 75em) {
+@media  screen and (min-width: 90em) {
 
-  .container {
-    max-width: 94rem;
+  .content {
+    max-width: 94,2rem;
   }
   
   .page-header {
