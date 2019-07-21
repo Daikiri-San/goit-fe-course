@@ -37,13 +37,6 @@ img {
   color: var(--main-color);
 }
 
-.registration-button::first-letter,
-.section__text::first-letter,
-.main__section::first-letter,
-.partners__link::first-letter {
-  text-transform: uppercase;
-}
-
 .registration {
   text-align: center;
   margin-bottom: 11.6rem;
