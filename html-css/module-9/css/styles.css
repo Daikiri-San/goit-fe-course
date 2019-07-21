@@ -331,7 +331,7 @@ margin-bottom: 2.6rem;
 
 }
 
-@media  screen and (min-width: 75em) {
+@media  screen and (min-width: 62em) {
 
   .content {
     max-width: 94,2rem;
@@ -339,6 +339,11 @@ margin-bottom: 2.6rem;
   
   .page-header {
     min-width: 94rem;
+  }
+
+  .site-logo,
+  .registration {
+    padding: 0;
   }
 
   .inbanner {
