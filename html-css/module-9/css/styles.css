@@ -14,6 +14,10 @@
   margin: 0 auto;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -42,6 +46,7 @@ img {
 
 .logo-link {
   text-decoration: none;
+  font-family: var(--main-font);
   font-size: 2rem;
   letter-spacing: 0.1rem;
   line-height: 2.4rem;
@@ -65,6 +70,7 @@ img {
 }
 
 .registration-button {
+  font-family: var(--main-font);
   font-size: 1.4rem;
   line-height: 1.6;
   background-color: transparent;
@@ -91,6 +97,7 @@ img {
 .banner {
   position: relative;
   margin-bottom: 6.6rem;
+  width: 100%;
 }
 
 .banner::before {
@@ -110,18 +117,19 @@ img {
     mix-blend-mode: difference;
 }
 
-.inbanner {
+  .inbanner {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
   min-width: 32rem;
-  max-width: 32rem;
+  max-width: 32.1rem;
   text-align: center;
 }
 
 .section__title {  
+  font-family: var(--main-font);
   font-size: 3rem;
   line-height: 3.6rem;
   margin-bottom: 1rem;
@@ -142,6 +150,7 @@ img {
 .partners__link {
   display: inline-block;
   text-decoration: none;
+  font-family: var(--main-font);
   font-size: 1.4rem;
   line-height: 1.6;
   border: 0.2rem solid var(--secondary-color);
@@ -160,6 +169,7 @@ img {
 }
 
 .main__section {
+  font-family: var(--main-font);
   font-size: 2.2rem;
   line-height: 2.6rem;
   color: var(--first-font-color);
@@ -235,6 +245,7 @@ margin-bottom: 2.6rem;
 
 .members__name {
   text-transform: capitalize;
+  font-family: var(--main-font);
   margin-bottom: 1.2rem;
 }
 
@@ -277,7 +288,7 @@ margin-bottom: 2.6rem;
 
   .inbanner,
   .section__text {
-    min-width: 50.4rem;
+    min-width: 53.3rem;
   }
 
   .inbanner {
