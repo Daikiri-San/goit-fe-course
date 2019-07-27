@@ -1,0 +1,19 @@
+:root {
+    --main-color:#ffffff;
+    --secondary-color:#f38181;
+    --third-color: #95e1d3;
+    --additional-color: #fce38a;
+    --first-font-color:#333333;
+    --second-font-color:#999999;
+    --border-color: #e5e5e5;
+    --main-font: "Montserrat Bold", sans-serif;
+    --secondary-font: "Montserrat Medium", sans-serif;
+    --third-font: "Roboto Regular", sans-serif;
+    --fourth-font: "Roboto Light Italic", sans-serif;
+    --decorative-font: "Kaushan Script", cursive;
+  
+    min-width: 32rem;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
