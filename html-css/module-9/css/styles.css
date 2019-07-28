@@ -7,24 +7,6 @@
   box-sizing: inherit;
 }
 
-.container {
-  position: relative;
-  min-width: 32rem;
-  max-width: 76.7rem;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-}
-
 img {
   display: block;
   max-width: 100%;

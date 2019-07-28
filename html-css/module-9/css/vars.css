@@ -6,6 +6,7 @@
     --main-font: "Montserrat Bold", sans-serif;
     --secondary-font: "Roboto Light", sans-serif;
 
+    position: relative;
     font-size: 62.5%;
     min-width: 32em;
     box-sizing: border-box;
