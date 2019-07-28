@@ -22,6 +22,7 @@ img {
   left: 50%;
   transform: translatex(-50%);
   z-index: 10;
+
 }
 
  .site-logo {
@@ -331,14 +332,13 @@ margin-bottom: 2.6rem;
   .content {
     max-width: 94,2rem;
   }
-  
-  .page-header {
-    min-width: 94rem;
+
+  .site-logo {
+    margin-left: 10%;
   }
 
-  .site-logo,
   .registration {
-    padding: 0;
+    margin-right: 10%;
   }
 
   .inbanner {
