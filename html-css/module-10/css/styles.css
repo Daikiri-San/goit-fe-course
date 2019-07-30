@@ -150,11 +150,13 @@ img {
   pointer-events: none;
   }
   
-  .site-navigation__item a:hover::before{
+  .site-navigation__item a:hover::before,
+  .site-navigation__item a:focus::before{
   width: 50%;
   left: 0;
   }
-  .site-navigation__item a:hover::after{
+  .site-navigation__item a:hover::after,
+  .site-navigation__item a:focus::after{
   width: 50%;
   }
 
@@ -211,19 +213,8 @@ img {
 
   .banner {
     width: 100%;
-    min-width: 120rem;
+    height: 100vh ;
     margin-bottom: 4.6rem;
-    position: relative;
-  }
-
-  .banner__image {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
-  .banner::before {
-    position: absolute;
-    content: "";
     background-image: -webkit-gradient(
       linear,left top, left bottom,from(rgba(243, 129, 129, 0.9)),to(rgba(252, 227, 138, 0.9))
     );
@@ -235,19 +226,24 @@ img {
     );
     background-image: linear-gradient(
       rgba(243, 129, 129, 0.9) 0%,rgba(252, 227, 138, 0.9)  100%
-    );
-    top: 0rem; left: 0rem; bottom: 0rem; right: 0rem;
-    z-index: 10;
+    ),
+     url(../img/mainview/eagle.jpg);
+    background-repeat:no-repeat;
+    background-size: 100vw 100vh;
+    background-position: 0 0;
   }
 
+  @media 
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      .banner {
+        background-image: url(../img/mainview/eagle@2x.jpg);
+      }
+    }
+
   .inbanner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-    z-index: 15;
+    margin: 0 auto;
+    padding-top: 5%;
     max-width: 84.4rem;
     text-align: center;
   }
@@ -492,11 +488,13 @@ img {
   transition: fill 0.2s linear;
 }
 
-.inner_box__item:hover {
+.inner_box__item:hover,
+.inner_box__item:focus {
   background-color: var(--secondary-color);
 }
 
-.inner_box__item:hover .inner_box__item--social {
+.inner_box__item:hover .inner_box__item--social,
+.inner_box__item:focus .inner_box__item--social {
   fill: var(--main-color);
 }
 
