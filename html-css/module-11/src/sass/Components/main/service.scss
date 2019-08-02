@@ -1,0 +1,54 @@
+.service {
+  position: relative;
+  width: 38rem;
+  margin-bottom: 9rem;
+  padding-left: 8rem;
+
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    display: inline-block;
+    content: '';
+    width: 3.4rem;
+    height: 3.4rem;
+    background-repeat: no-repeat;
+    color: $third-color;
+  }
+
+  &__icon--alarm::before {
+    background-image: url(../images/main-icons/features/alarm.svg);
+  }
+  
+  &__icon--line-graph::before {
+    background-image: url(../images/main-icons/features/line-graph.svg);
+  }
+  
+  &__icon--computer::before {
+    background-image: url(../images/main-icons/features/computer.svg);
+  }
+  
+  &__icon--book::before {
+    background-image: url(../images/main-icons/features/book.svg);
+  }
+  
+  &__icon--home::before {
+    background-image: url(../images/main-icons/features/home.svg);
+  }
+  
+  &__icon--image::before {
+    background-image: url(../images/main-icons/features/image.svg);
+  }
+}
+
+.service__title,
+.team__member--name {
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $first-font-color;
+}

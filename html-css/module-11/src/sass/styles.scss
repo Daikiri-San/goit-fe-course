@@ -1,0 +1,23 @@
+@import './reset.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './vars.scss';
+@import './base.scss';
+
+// Components
+
+@import './Components/header/page-header.scss';
+@import './Components/header/site-logo.scss';
+@import './Components/header/page-nav.scss';
+@import './Components/header/additional-section.scss';
+
+@import './Components/banner/banner.scss';
+@import './Components/banner/inbanner.scss';
+
+@import './Components/main/section.scss';
+@import './Components/main/service.scss';
+@import './Components/main/member.scss';
+@import './Components/main/inner_box.scss';
+
+@import './Components/footer/page-footer-info.scss';
+@import './Components/footer/footer-form.scss';

@@ -1,0 +1,36 @@
+.site-logo {
+  -webkit-animation: logo 10s linear 0s infinite;
+  animation: logo 10s linear 0s infinite;
+  
+  &__link {
+    text-decoration: none;
+    font-family: $main-font;
+    font-size: 3rem;
+    letter-spacing: -0.06rem;
+    color: $main-color;
+  }
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}

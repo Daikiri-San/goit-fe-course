@@ -585,22 +585,22 @@ color: var(--first-font-color);
 
 .footer-form__text::-webkit-input-placeholder {
   font-family: var(--fourth-font);
-  color: var(--third-font-color);
+  color: var(--second-font-color);
 }
 
 .footer-form__text:-ms-input-placeholder {
   font-family: var(--fourth-font);
-  color: var(--third-font-color);
+  color: var(--second-font-color);
 }
 
 .footer-form__text::-ms-input-placeholder {
   font-family: var(--fourth-font);
-  color: var(--third-font-color);
+  color: var(--second-font-color);
 }
 
 .footer-form__text::placeholder {
   font-family: var(--fourth-font);
-  color: var(--third-font-color);
+  color: var(--second-font-color);
 }
 
 .footer-form__submit {

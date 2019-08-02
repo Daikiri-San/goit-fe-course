@@ -1,0 +1,49 @@
+.footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  &__text {
+    width: 23rem;
+    border: 0.1rem solid $border-color;
+    border-right: none;
+    padding: 1rem;
+
+    &::-webkit-input-placeholder {
+      font-family: $fourth-font;
+      color: $second-font-color;
+    }
+
+    &:-ms-input-placeholder {
+      font-family: $fourth-font;
+      color: $second-font-color;
+    }
+
+    &::-ms-input-placeholder {
+      font-family: $fourth-font;
+      color: $second-font-color;
+    }
+
+    &::placeholder {
+      font-family: $fourth-font;
+      color: $second-font-color;
+    }
+  }
+
+  &__submit {
+    border: none;
+    width: 15rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: $third-color;
+    font-family: $main-font;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:active {
+      margin-top: 0.1rem;
+      margin-bottom: -0.1rem;
+      zoom: 1;
+    }
+  }
+}

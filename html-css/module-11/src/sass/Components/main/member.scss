@@ -1,0 +1,82 @@
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.member {
+  position: relative;
+  width: 38rem;
+  margin-bottom: 2.8rem;
+  background-color: $third-color;
+
+  &__exact {
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  }
+
+  &__exact--decorative-gradient {
+    position: absolute;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(243, 129, 129, 0.9)),
+      to(rgba(252, 227, 138, 0.9))
+    );
+    background-image: -webkit-linear-gradient(
+      rgba(243, 129, 129, 0.9) 0%,
+      rgba(252, 227, 138, 0.9) 100%
+    );
+    background-image: -o-linear-gradient(
+      rgba(243, 129, 129, 0.9) 0%,
+      rgba(252, 227, 138, 0.9) 100%
+    );
+    background-image: linear-gradient(
+      rgba(243, 129, 129, 0.9) 0%,
+      rgba(252, 227, 138, 0.9) 100%
+    );
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+
+  &:hover .member__exact {
+    -webkit-transform: translate(-1rem, -1rem);
+    -ms-transform: translate(-1rem, -1rem);
+    transform: translate(-1rem, -1rem);
+  }
+
+  &:hover .member__exact--decorative-gradient {
+    opacity: 1;
+  }
+}
+
+.team__member--name,
+.team__member--activities {
+  text-align: center;
+}
+
+.team__member--name {
+  margin-bottom: 1rem;
+}
+
+.team__member--activities {
+  color: $second-font-color;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 8.2rem;
+  text-transform: capitalize;
+  font-family: $fourth-font;
+}

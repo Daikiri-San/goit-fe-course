@@ -1,0 +1,42 @@
+.inbanner {
+  margin: 0 auto;
+  padding-top: 10%;
+  max-width: 84.4rem;
+  text-align: center;
+
+  &__title {
+    font-family: $main-font;
+    font-size: 15rem;
+    line-height: 14rem;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 8.6rem;
+  }
+
+  &__text {
+    font-family: $decorative-font;
+    font-weight: normal;
+    font-size: 7.2rem;
+    line-height: 8.6rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    -webkit-transition: border 0.2s linear;
+    -o-transition: border 0.2s linear;
+    transition: border 0.2s linear;
+
+    &:hover,
+    &:focus {
+      border: solid 0.3rem $main-color;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 0.1rem solid $border-color;
+}
+
+.footer-info__text,
+.footer-info__link {
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.footer-info__text {
+  color: $first-font-color;
+
+  &::before {
+    content: '\00A9';
+    margin-right: 0.3rem;
+  }
+}
+
+.footer-info__link {
+  text-decoration: none;
+  color: $secondary-color;
+}
