@@ -30,13 +30,6 @@
     line-height: 1.6rem;
     text-transform: uppercase;
     padding: 1rem 3rem;
-    -webkit-transition: border 0.2s linear;
-    -o-transition: border 0.2s linear;
-    transition: border 0.2s linear;
-
-    &:hover,
-    &:focus {
-      border: solid 0.3rem $main-color;
-    }
+    border: solid 0.3rem $main-color;
   }
 }
