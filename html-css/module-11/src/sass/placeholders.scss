@@ -1,0 +1,19 @@
+%main-font-style {
+  font-family: $third-font;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: $second-font-color;
+}
+
+%second-font-style {
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: $first-font-color;
+}
+
+%third-font-style {
+  font-family: $secondary-font;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}

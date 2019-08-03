@@ -1,9 +1,13 @@
-:root {min-width: 32rem;position: relative;-webkit-box-sizing: border-box;box-sizing: border-box;font-size: 62.5%;}
+:root {
+  min-width: 78rem;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 

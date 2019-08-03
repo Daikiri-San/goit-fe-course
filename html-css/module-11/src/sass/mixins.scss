@@ -1,0 +1,12 @@
+@mixin flex-space($type:'bet-center') {
+  display: flex;
+
+  @if $type== 'bet-center' {
+    justify-content: space-between;
+    align-items: center;
+  } @else if $type== 'bet' {
+    justify-content: space-between;
+  } @else if $type== 'around' {
+    justify-content: space-around;
+  }
+}

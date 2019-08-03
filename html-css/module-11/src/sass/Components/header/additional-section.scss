@@ -1,11 +1,7 @@
 .additional-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @include flex-space('bet');
   min-width: 9rem;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+
 
   &__item:not(nth-last-of-type(1)) {
     margin-right: 5rem;
@@ -19,15 +15,13 @@
     &:focus .additional-section__link--bucket {
       fill: $additional-color;
     }
-  }
 
-  &__link--bucket {
-    width: 2rem;
-    height: 2rem;
-    fill: $main-color;
-    -webkit-transition: fill 0.2s linear;
-    -o-transition: fill 0.2s linear;
-    transition: fill 0.2s linear;
+    &--bucket {
+      width: 2rem;
+      height: 2rem;
+      fill: $main-color;
+      transition: fill 0.2s linear;
+    }
   }
 
   &__button {
@@ -36,18 +30,16 @@
     border: none;
     cursor: pointer;
 
-    &:hover .additional-section__link--bucket,
-    &:focus .additional-section__link--bucket {
+    &:hover .additional-section__button--search,
+    &:focus .additional-section__button--search {
       fill: $additional-color;
     }
-  }
 
-  &__button--search {
-    width: 1.8rem;
-    height: 1.8rem;
-    fill: $main-color;
-    -webkit-transition: fill 0.2s linear;
-    -o-transition: fill 0.2s linear;
-    transition: fill 0.2s linear;
+    &--search {
+      width: 1.8rem;
+      height: 1.8rem;
+      fill: $main-color;
+      transition: fill 0.2s linear;
+    }
   }
 }

@@ -5,7 +5,12 @@
   padding-left: 8rem;
 
   &__title {
+    @extend %second-font-style;
     margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    @extend %main-font-style;
   }
 
   &::before {
@@ -43,12 +48,4 @@
   &__icon--image::before {
     background-image: url(../images/main-icons/features/image.svg);
   }
-}
-
-.service__title,
-.team__member--name {
-  font-family: $secondary-font;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: $first-font-color;
 }

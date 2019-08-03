@@ -1,28 +1,12 @@
 .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 
   &__text {
+    @extend %main-font-style;
     width: 23rem;
     border: 0.1rem solid $border-color;
     border-right: none;
     padding: 1rem;
-
-    &::-webkit-input-placeholder {
-      font-family: $fourth-font;
-      color: $second-font-color;
-    }
-
-    &:-ms-input-placeholder {
-      font-family: $fourth-font;
-      color: $second-font-color;
-    }
-
-    &::-ms-input-placeholder {
-      font-family: $fourth-font;
-      color: $second-font-color;
-    }
 
     &::placeholder {
       font-family: $fourth-font;
