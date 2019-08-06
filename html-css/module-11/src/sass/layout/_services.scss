@@ -1,0 +1,20 @@
+.article__group {
+  @include flex-space('around');
+  flex-wrap: wrap;
+}
+
+.service {
+  position: relative;
+  width: 38rem;
+  margin-bottom: 9rem;
+  padding-left: 8rem;
+
+  &__title {
+    @extend %second-font-style;
+    margin-bottom: 1.6rem;
+  }
+
+  &__text {
+    @extend %main-font-style;
+  }
+}

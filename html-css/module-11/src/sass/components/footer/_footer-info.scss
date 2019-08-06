@@ -1,9 +1,3 @@
-.page-footer {
-  @include flex-space('bet-center');
-  padding: 1rem 0;
-  border-top: 0.1rem solid $border-color;
-}
-
 .footer-info__text {
   @extend %third-font-style;
   color: $first-font-color;

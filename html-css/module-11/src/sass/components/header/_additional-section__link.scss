@@ -1,0 +1,16 @@
+.additional-section__link {
+  display: block;
+  text-decoration: none;
+
+  &:hover .additional-section__link--bucket,
+  &:focus .additional-section__link--bucket {
+    fill: $additional-color;
+  }
+
+  &--bucket {
+    width: 2rem;
+    height: 2rem;
+    fill: $main-color;
+    transition: fill 0.2s linear;
+  }
+}

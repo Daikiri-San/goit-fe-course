@@ -1,0 +1,4 @@
+.additional-section {
+  @include flex-space('bet');
+  min-width: 9rem;
+}

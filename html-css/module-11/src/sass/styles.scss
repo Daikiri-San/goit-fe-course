@@ -1,25 +1,39 @@
-@import './reset.scss';
-@import './normalize.scss';
-@import './fonts.scss';
-@import './vars.scss';
-@import './placeholders.scss';
-@import './mixins.scss';
-@import './base.scss';
+// Abstracts
+
+@import './abstracts/vars';
+@import './abstracts/placeholders';
+@import './abstracts/mixins';
+
+// Base
+
+@import './base/reset';
+@import './base/fonts';
+@import './base/base';
+
+// Layout
+
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/additional-section';
+@import './layout/banner';
+@import './layout/inbanner';
+@import './layout/section';
+@import './layout/services';
+@import './layout/members';
+@import './layout/inner_box';
+@import './layout/footer';
+@import './layout/footer-form';
 
 // Components
 
-@import './Components/header/page-header.scss';
-@import './Components/header/site-logo.scss';
-@import './Components/header/page-nav.scss';
-@import './Components/header/additional-section.scss';
+@import './components/header/site-logo';
+@import './components/header/additional-section__link';
+@import './components/header/additional-section__button';
 
-@import './Components/banner/banner.scss';
-@import './Components/banner/inbanner.scss';
+@import './components/banner/inbanner__button';
 
-@import './Components/main/section.scss';
-@import './Components/main/service.scss';
-@import './Components/main/member.scss';
-@import './Components/main/inner_box.scss';
+@import './components/main/section-underline';
+@import './components/main/services-icon-blocks.scss';
+@import './components/main/inner_box__items';
 
-@import './Components/footer/page-footer-info.scss';
-@import './Components/footer/footer-form.scss';
+@import './components/footer/footer-info';

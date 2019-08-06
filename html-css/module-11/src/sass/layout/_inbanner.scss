@@ -21,15 +21,4 @@
     text-transform: capitalize;
     margin-bottom: 2rem;
   }
-
-  &__button {
-    text-decoration: none;
-    color: $main-color;
-    font-family: $main-font;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    text-transform: uppercase;
-    padding: 1rem 3rem;
-    border: solid 0.3rem $main-color;
-  }
 }

@@ -1,0 +1,18 @@
+.additional-section__button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover .additional-section__button--search,
+  &:focus .additional-section__button--search {
+    fill: $additional-color;
+  }
+
+  &--search {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: $main-color;
+    transition: fill 0.2s linear;
+  }
+}

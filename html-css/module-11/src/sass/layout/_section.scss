@@ -7,16 +7,6 @@
   font-size: 3rem;
   line-height: 3.6rem;
   text-transform: uppercase;
-
-  &::after {
-    display: block;
-    margin: 0 auto;
-    margin-top: 3.4rem;
-    content: '';
-    width: 6rem;
-    height: 0.3rem;
-    background-color: $secondary-color;
-  }
 }
 
 .section__text {
@@ -35,9 +25,4 @@
   padding: 0 10%;
   text-align: center;
   margin-bottom: 9rem;
-}
-
-.article__group {
-  @include flex-space('around');
-  flex-wrap: wrap;
 }
