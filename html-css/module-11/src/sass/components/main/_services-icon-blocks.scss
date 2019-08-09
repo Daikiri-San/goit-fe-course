@@ -10,26 +10,11 @@
   color: $third-color;
 }
 
-.service__icon--alarm::before {
-  background-image: url(../images/main-icons/features/icon-alarm.svg);
-}
+$icons: alarm, line-graph, computer, book, home, image;
 
-.service__icon--line-graph::before {
-  background-image: url(../images/main-icons/features/icon-line-graph.svg);
-}
-
-.service__icon--computer::before {
-  background-image: url(../images/main-icons/features/icon-computer.svg);
-}
-
-.service__icon--book::before {
-  background-image: url(../images/main-icons/features/icon-book.svg);
-}
-
-.service__icon--home::before {
-  background-image: url(../images/main-icons/features/icon-home.svg);
-}
-
-.service__icon--image::before {
-  background-image: url(../images/main-icons/features/icon-image.svg);
-}
+@include generate-pseudo-icons(
+  'service__icon--',
+  $icons,
+  '../images/main-icons/features/icon-',
+  'svg'
+);

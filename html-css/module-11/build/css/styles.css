@@ -688,3 +688,29 @@ img {
     background-image: linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%), url(../images/mainview/eagle@2x.jpg);
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .service__icon--alarm::before {
+    background-image: url(../images/main-icons/features/icon-alarm@2px.svg);
+  }
+
+  .service__icon--line-graph::before {
+    background-image: url(../images/main-icons/features/icon-line-graph@2px.svg);
+  }
+
+  .service__icon--computer::before {
+    background-image: url(../images/main-icons/features/icon-computer@2px.svg);
+  }
+
+  .service__icon--book::before {
+    background-image: url(../images/main-icons/features/icon-book@2px.svg);
+  }
+
+  .service__icon--home::before {
+    background-image: url(../images/main-icons/features/icon-home@2px.svg);
+  }
+
+  .service__icon--image::before {
+    background-image: url(../images/main-icons/features/icon-image@2px.svg);
+  }
+}
